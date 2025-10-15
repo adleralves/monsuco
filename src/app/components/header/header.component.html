@@ -1,0 +1,68 @@
+<!-- Header Component -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <h1 class="text-2xl font-bold text-blue-600">Monsuco</h1>
+      </div>
+      
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+        <a routerLink="/home" routerLinkActive="text-blue-600 font-semibold" 
+           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          Home
+        </a>
+        <a routerLink="/produtos" routerLinkActive="text-blue-600 font-semibold" 
+           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          Produtos
+        </a>
+        <a routerLink="/sobre" routerLinkActive="text-blue-600 font-semibold" 
+           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          Sobre
+        </a>
+        <a routerLink="/comodato" routerLinkActive="text-blue-600 font-semibold" 
+           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          Comodato
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button class="text-gray-700 hover:text-blue-600 focus:outline-none" 
+                (click)="toggleMobileMenu()">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden" [class.hidden]="!mobileMenuOpen">
+      <div class="py-4 space-y-2">
+        <a routerLink="/home" routerLinkActive="text-blue-600 font-semibold" 
+           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+           (click)="closeMobileMenu()">
+          Home
+        </a>
+        <a routerLink="/produtos" routerLinkActive="text-blue-600 font-semibold" 
+           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+           (click)="closeMobileMenu()">
+          Produtos
+        </a>
+        <a routerLink="/sobre" routerLinkActive="text-blue-600 font-semibold" 
+           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+           (click)="closeMobileMenu()">
+          Sobre
+        </a>
+        <a routerLink="/comodato" routerLinkActive="text-blue-600 font-semibold" 
+           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+           (click)="closeMobileMenu()">
+          Comodato
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
