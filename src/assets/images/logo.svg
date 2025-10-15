@@ -1,0 +1,49 @@
+<svg id="_2" data-name="2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1444" height="280" viewBox="0 0 1444 280">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 260px;
+        font-family: Inter;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        fill: #fe7902;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        filter: url(#filter);
+      }
+
+      .cls-5 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="139.906" y="52.656" width="20.875" height="27" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="105.469" y="41.031" width="32.125" height="38.625" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="Monsuco" class="cls-1" x="300" y="233">Monsuco</text>
+  <g id="Folder_2" data-name="Folder 2">
+    <path id="Layer_3" data-name="Layer 3" class="cls-2" d="M0,0H265.032V279.858H0V0Z"/>
+    <path id="Layer_6" data-name="Layer 6" class="cls-3" d="M120.036,238.144c-31.047,8.319-66.23-22.6-78.709-69.171s2.531-90.94,33.578-99.259,66.23,22.6,78.709,69.172S151.083,229.825,120.036,238.144Z"/>
+    <path id="Layer_6_copy" data-name="Layer 6 copy" class="cls-3" d="M191.332,69.166c31.047,8.319,46.056,52.688,33.578,99.259S177.248,245.916,146.2,237.6s-46.057-52.688-33.578-99.259S160.284,60.847,191.332,69.166Z"/>
+    <path id="Color_Fill_2_copy" data-name="Color Fill 2 copy" class="cls-4" d="M141.6,79.66c-3.2-.736-1.734-11.507,3.192-18.328,4.6-6.37,12.687-9.266,15.106-8.581,3.841,1.088-5.617,13.109-14.37,23.547"/>
+    <path id="Layer_2_copy" data-name="Layer 2 copy" class="cls-5" d="M132.991,77.507C138.772,71,138.5,65.3,135.457,57.481c-4.869-12.5-23.8-19.117-28.3-15.494-4.622,3.72.7,19.325,10.973,31.262,3.549,4.123,4.4,6.361,9.478,6.411"/>
+  </g>
+</svg>
