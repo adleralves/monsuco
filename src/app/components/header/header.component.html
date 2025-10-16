@@ -1,35 +1,35 @@
 <!-- Header Component -->
 <nav class="bg-white shadow-lg sticky top-0 z-50">
   <div class="container mx-auto px-4">
-    <div class="flex justify-between items-center py-4">
+    <div class="flex items-center py-4">
       <!-- Logo -->
       <div class="flex items-center">
         <img src="assets/images/logo.svg" alt="Monsuco" class="h-8 w-auto object-contain">
       </div>
       
-      <!-- Navigation Links -->
-      <div class="hidden md:flex space-x-8">
-        <a routerLink="/home" routerLinkActive="text-blue-600 font-semibold" 
-           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+      <!-- Navigation Links - Centered -->
+      <div class="hidden md:flex space-x-8 flex-1 justify-center">
+        <a routerLink="/home" routerLinkActive="active-link" 
+           class="text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative">
           Home
         </a>
-        <a routerLink="/produtos" routerLinkActive="text-blue-600 font-semibold" 
-           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+        <a routerLink="/produtos" routerLinkActive="active-link" 
+           class="text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative">
           Produtos
         </a>
-        <a routerLink="/sobre" routerLinkActive="text-blue-600 font-semibold" 
-           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+        <a routerLink="/sobre" routerLinkActive="active-link" 
+           class="text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative">
           Sobre
         </a>
-        <a routerLink="/comodato" routerLinkActive="text-blue-600 font-semibold" 
-           class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+        <a routerLink="/comodato" routerLinkActive="active-link" 
+           class="text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative">
           Comodato
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button class="text-gray-700 hover:text-blue-600 focus:outline-none" 
+      <div class="md:hidden ml-auto">
+        <button class="text-gray-700 hover:text-[#fe7902] focus:outline-none transition-colors duration-200" 
                 (click)="toggleMobileMenu()">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -42,23 +42,23 @@
     <!-- Mobile Menu -->
     <div class="md:hidden" [class.hidden]="!mobileMenuOpen">
       <div class="py-4 space-y-2">
-        <a routerLink="/home" routerLinkActive="text-blue-600 font-semibold" 
-           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+        <a routerLink="/home" routerLinkActive="active-link" 
+           class="block text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative"
            (click)="closeMobileMenu()">
           Home
         </a>
-        <a routerLink="/produtos" routerLinkActive="text-blue-600 font-semibold" 
-           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+        <a routerLink="/produtos" routerLinkActive="active-link" 
+           class="block text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative"
            (click)="closeMobileMenu()">
           Produtos
         </a>
-        <a routerLink="/sobre" routerLinkActive="text-blue-600 font-semibold" 
-           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+        <a routerLink="/sobre" routerLinkActive="active-link" 
+           class="block text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative"
            (click)="closeMobileMenu()">
           Sobre
         </a>
-        <a routerLink="/comodato" routerLinkActive="text-blue-600 font-semibold" 
-           class="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+        <a routerLink="/comodato" routerLinkActive="active-link" 
+           class="block text-gray-700 hover:text-[#fe7902] transition-colors duration-200 relative"
            (click)="closeMobileMenu()">
           Comodato
         </a>

@@ -1,0 +1,17 @@
+/* Active link styles */
+.active-link {
+  color: #fe7902 !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fe7902;
+  border-radius: 1px;
+}

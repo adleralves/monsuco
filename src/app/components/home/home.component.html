@@ -1,53 +1,190 @@
 <!-- Home Component -->
-<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-  <!-- Hero Section -->
-  <div class="container mx-auto px-4 py-16">
-    <div class="text-center mb-16">
-      <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-        Bem-vindo ao <span class="text-blue-600">Monsuco</span>
-      </h1>
-      <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-        Sua solução completa para equipamentos e serviços de qualidade. 
-        Oferecemos produtos inovadores e soluções personalizadas para suas necessidades.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200">
-          Ver Produtos
-        </button>
-        <button class="bg-white hover:bg-gray-50 text-blue-600 font-bold py-3 px-8 rounded-lg border-2 border-blue-600 transition-colors duration-200">
-          Saiba Mais
-        </button>
+<div class="min-h-screen">
+  <!-- Hero Carousel -->
+  <div class="relative bg-orange-100 text-gray-800 overflow-hidden">
+    <!-- Carousel Container -->
+    <div class="relative">
+      <!-- Slide 1 -->
+      <div class="flex flex-col lg:flex-row h-[600px]" [class.hidden]="currentSlide !== 0">
+        <div class="flex-[2] flex items-center justify-center p-8 lg:p-16">
+          <div class="max-w-2xl">
+            <!-- 100% Natural Badge -->
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-2xl font-bold">100%</div>
+                <div class="text-lg">Natural</div>
+              </div>
+            </div>
+            
+            <h1 class="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+              Pureza em Cada<br>Ingrediente
+            </h1>
+            <p class="text-lg mb-8 text-gray-600">
+              Sem corantes artificiais, sem conservantes químicos. Apenas ingredientes naturais 
+              selecionados para sua família.
+            </p>
+            <button class="bg-green-200 text-green-700 hover:bg-green-300 font-bold py-3 px-8 rounded-lg border border-green-300 transition-colors duration-200">
+              Saiba Mais
+            </button>
+          </div>
+        </div>
+        <div class="flex-[1] relative p-2 flex items-center justify-center">
+          <div class="relative w-full max-w-md">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Ingredientes naturais" 
+                 class="w-full h-96 object-cover rounded-lg">
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Features Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-        <div class="text-4xl mb-4">🚀</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Inovação</h3>
-        <p class="text-gray-600">Tecnologia de ponta em todos os nossos produtos e serviços.</p>
+      <!-- Slide 2 -->
+      <div class="flex flex-col lg:flex-row h-[600px]" [class.hidden]="currentSlide !== 1">
+        <div class="flex-[2] flex items-center justify-center p-8 lg:p-16">
+          <div class="max-w-2xl">
+            <!-- Eco Badge -->
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-2xl font-bold">Eco</div>
+                <div class="text-lg">Friendly</div>
+              </div>
+            </div>
+            
+            <h1 class="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+              Sustentabilidade<br>em Primeiro Lugar
+            </h1>
+            <p class="text-lg mb-8 text-gray-600">
+              Comprometidos com o meio ambiente, desenvolvemos soluções que respeitam 
+              a natureza e promovem um futuro mais sustentável.
+            </p>
+            <button class="bg-green-200 text-green-700 hover:bg-green-300 font-bold py-3 px-8 rounded-lg border border-green-300 transition-colors duration-200">
+              Ver Nossos Produtos
+            </button>
+          </div>
+        </div>
+        <div class="flex-[1] relative p-2 flex items-center justify-center">
+          <div class="relative w-full max-w-md">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Sustentabilidade" 
+                 class="w-full h-96 object-cover rounded-lg">
+          </div>
+        </div>
       </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-        <div class="text-4xl mb-4">⚡</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Performance</h3>
-        <p class="text-gray-600">Soluções otimizadas para máxima eficiência e resultados.</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-        <div class="text-4xl mb-4">🛡️</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Confiabilidade</h3>
-        <p class="text-gray-600">Produtos testados e aprovados com garantia de qualidade.</p>
-      </div>
-    </div>
 
-    <!-- CTA Section -->
-    <div class="bg-blue-600 rounded-lg p-8 text-center text-white">
-      <h2 class="text-3xl font-bold mb-4">Pronto para começar?</h2>
-      <p class="text-xl mb-6">Entre em contato conosco e descubra como podemos ajudar seu negócio.</p>
-      <button class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-colors duration-200">
-        Entre em Contato
+      <!-- Slide 3 -->
+      <div class="flex flex-col lg:flex-row h-[600px]" [class.hidden]="currentSlide !== 2">
+        <div class="flex-[2] flex items-center justify-center p-8 lg:p-16">
+          <div class="max-w-2xl">
+            <!-- Quality Badge -->
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-2xl font-bold">100%</div>
+                <div class="text-lg">Qualidade</div>
+              </div>
+            </div>
+            
+            <h1 class="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+              Excelência em<br>Cada Produto
+            </h1>
+            <p class="text-lg mb-8 text-gray-600">
+              Mais de 500 clientes satisfeitos confiam em nossas soluções. 
+              Construímos relacionamentos duradouros baseados em excelência e resultados.
+            </p>
+            <button class="bg-green-200 text-green-700 hover:bg-green-300 font-bold py-3 px-8 rounded-lg border border-green-300 transition-colors duration-200">
+              Fale Conosco
+            </button>
+          </div>
+        </div>
+        <div class="flex-[1] relative p-2 flex items-center justify-center">
+          <div class="relative w-full max-w-md">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Qualidade" 
+                 class="w-full h-96 object-cover rounded-lg">
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button (click)="previousSlide()" 
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-green-200 hover:bg-green-300 text-green-700 p-3 rounded-full transition-colors duration-200 z-30">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
       </button>
+      <button (click)="nextSlide()" 
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-green-200 hover:bg-green-300 text-green-700 p-3 rounded-full transition-colors duration-200 z-30">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Carousel Indicators -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+      <button *ngFor="let slide of slides; let i = index" 
+              (click)="goToSlide(i)"
+              [class]="i === currentSlide ? 'w-3 h-3 bg-green-300' : 'w-2 h-2 bg-gray-400'"
+              class="rounded-full transition-all duration-200"></button>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Por que escolher a Monsuco?</h2>
+        <p class="text-xl text-gray-600">Soluções que fazem a diferença no seu negócio</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Inovação</h3>
+          <p class="text-gray-600">Tecnologia de ponta em todos os nossos produtos e serviços.</p>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Performance</h3>
+          <p class="text-gray-600">Soluções otimizadas para máxima eficiência e resultados.</p>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="text-4xl mb-4">🛡️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Confiabilidade</h3>
+          <p class="text-gray-600">Produtos testados e aprovados com garantia de qualidade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="py-16" style="background-color: #fe7902;">
+    <div class="container mx-auto px-4 text-center text-white">
+      <h2 class="text-3xl font-bold mb-4">Pronto para experimentar?</h2>
+      <p class="text-xl mb-8">Texto.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-white text-[#fe7902] hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-colors duration-200">
+          Ver todos os produtos
+        </button>
+        <button class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#fe7902] font-bold py-3 px-8 rounded-lg transition-colors duration-200">
+          Fale conosco
+        </button>
+      </div>
     </div>
   </div>
 </div>
